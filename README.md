@@ -26,14 +26,14 @@ Notera, med "Svart" och "Gult" åsyftas den tejp som finns tejpad runt handtagen
 ## Att skicka signaler till handtagen
 
 ### PsychoPy
-Använder vi oss av PsychoPy (http://www.psychopy.org; Peirce, 2007) fungerar det på alla datorer i labbet. För att kommunicera med parallellporten, via PsychoPy & Python, använder man sig av modulen Parallel (http://www.psychopy.org/api/parallel.htm)
+Använder vi oss av PsychoPy (http://www.psychopy.org; Peirce, 2007) fungerar det på alla datorer i labbet. För att kommunicera med parallellporten, via PsychoPy & Python, använder man sig av modulen Parallel (http://www.psychopy.org/api/parallel.html)
 
 Följande portar gäller i labbet;
 
  - Input: 0xPORT
- - Output: 0XPORT
+ - Output: 0x3FF8
 
-Föratt aktivera olika stift i parallelporten använder man sig av *parallel.setData*.  Se Bilaga 1 för exempelkod för PsychoPy. För att handtaget ska sluta vibrera skickar man 0 (dvs., *parallel.setData(0)*). 
+Föratt aktivera olika stift i parallelporten använder man sig av *parallel.setData*.  Se [examplecode.py](https://github.com/marsja/vibration-device/blob/master/code/examplecode.py) för exempelkod för PsychoPy. För att handtaget ska sluta vibrera skickar man 0 (dvs., *parallel.setData(0)*). 
 
 ### Expyriment
 Använder vi oss av Expyriment (http://www.expyriment.org; Krause & Lindemann, 2013) fungerar det också på alla datorer i labbet. För att kommunicera med parallellporten, via Expyriment, via Expyriment & Python använnder man sig av klasserna *ParallelPort* (http://docs.expyriment.org/old/0.6.3/expyriment.io.ParallelPort.html) och *StreamingButtonBox* (http://docs.expyriment.org/old/0.7.0/expyriment.io.StreamingButtonBox.html). 
