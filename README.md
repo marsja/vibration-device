@@ -6,10 +6,6 @@ Valet avc handtag och hastighet (1, 2, eller 1 + 2) styrs med hjälp av programv
 
 Parallelporten har 25 stift (mer info: http://en.wikipedia.org/wiki/Parallel_port). Vissa stift kan använndas för input och andra för output. 
 
-Stiften som ansluter till parallelportens kort;
-
-[BILD]
-
 Stift 2 till 9 anväds för output. Vibrationsenheten är byggd för att upptäcka ström i pin 2, 3, 4, och 5. Till exempel, Skickar man ström till pin 2 så vibrerar det ena handtaget (med svart tejp) med hastighet 1.
 Nedan följer en tabell för stift och vilket handtag samt hastighet som aktiveras genom de olika stiften;
 
@@ -37,10 +33,10 @@ Följande portar gäller i labbet;
  - Input: 0xPORT
  - Output: 0XPORT
 
-Föratt aktivera olika stift i parallelporten använder man sig av metoden *parallel.setData*.  Se Bilaga 1 för exempelkod för PsychoPy. För att handtaget ska sluta vibrera skickar man 0 (dvs., *parallel.setData(0)*).
+Föratt aktivera olika stift i parallelporten använder man sig av *parallel.setData*.  Se Bilaga 1 för exempelkod för PsychoPy. För att handtaget ska sluta vibrera skickar man 0 (dvs., *parallel.setData(0)*). 
 
 ### Expyriment
-Använder vi oss av Expyriment (http://www.expyriment.org; Krause & Lindemann, 2013) fungerar det också på alla datorer i labbet. För att kommunicera med parallellporten, via Expyriment, via Expyriment & Python använnder man sig av modeluen **** (länk)
+Använder vi oss av Expyriment (http://www.expyriment.org; Krause & Lindemann, 2013) fungerar det också på alla datorer i labbet. För att kommunicera med parallellporten, via Expyriment, via Expyriment & Python använnder man sig av klasserna *ParallelPort* (http://docs.expyriment.org/old/0.6.3/expyriment.io.ParallelPort.html) och *StreamingButtonBox* (http://docs.expyriment.org/old/0.7.0/expyriment.io.StreamingButtonBox.html). 
 
 ### Referenser
 
