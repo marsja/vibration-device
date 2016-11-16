@@ -42,7 +42,7 @@ both = [both_one, both_two, both_three]
 
 vibs = {'black': black, 'yellow': yellow, 'both': both}
 
-#output = pp.ParallelPort(adress=0x3FF8)
+port = pp.ParallelPort(adress=0x3FF8)
 
 
 # In the loop we go from the 'black' to the 'yellow' and the both handles
